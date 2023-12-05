@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Form</title>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="Form.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="body">
+    <div class="container d-flex justify-content-center">
+      <div class="col-sm-6 card">
+        <h2 class="text-center mt-2 mb-5 fw-normal">
+          Student Registration Form
+        </h2>
+        <form id="myForm">
+          <!-- Id -->
+          <input
+          type="hidden"
+          name="id"
+          id="id"
+          class="input form-control ms-2"
+          placeholder="" 
+        />
+        <!-- Firstname -->
+          <div class="form-group row container d-flex justify-content-center">
+            <div class="col-sm-6">
+              <label type="text">
+                <span class="text-black ms-2"
+                  >Firstame :</span
+                ></label
+              ><br />
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                class="input form-control ms-2"
+                placeholder=""
+              />
+              <p id="Firstname_err" class="text-danger fw-bold"></p>
+            </div>
+            <!-- LastName -->
+            <div class="col-sm-6">
+              <label type="text">
+                <span class="text-black"
+                  >Lastname :
+                </span></label
+              >
+              <input
+                type="text"
+                name="Lastname"
+                id="Lastname"
+                class="input form-control"
+                placeholder=""
+              />
+
+              <p id="Lastname_err" class="text-danger fw-bold"></p>
+            </div>
+          </div>
+          <!-- Phone -->
+          <div class="form-group row container">
+            <div class="col-sm-6">
+              <label type="text">
+                <span class="text-black ms-2">Phone</span></label
+              >
+              <input
+                type="number"
+                name="Phone"
+                id="Phone"
+                placeholder=""
+                class="input form-control ms-2"
+              />
+              <p id="Phone_err" class="text-danger fw-bold"></p>
+              </div>
+              <!-- Email -->
+            <div class="col-sm-6">
+              <label type="text">
+                <span class="text-black"
+                  >Email :
+                </span></label
+              >
+              <input
+                type="email"
+                name="Email"
+                id="Email"
+                class="input form-control"
+              />
+              <p id="Email_err" class="text-danger fw-bold"></p>
+            </div>
+          </div>
+          <!-- Username -->
+          <div class="form-group row container">
+            <div class="col-sm-6">
+              <label type="text"
+                ><span class="text-black  ms-2">
+                  Username:
+                </span></label
+              >
+              <input
+                type="text"
+                name="Username"
+                id="Username"
+                placeholder=""
+                class="input form-control ms-2"
+              />
+              <p id="Username_err" class="text-danger fw-bold"></p>
+            </div>
+            <!-- address -->
+            <div class="col-sm-6">
+              <label type="text"
+                ><span class="text-black"> Address : </span></label
+              >
+              <textarea
+                class="input form-control pb-5 pt-2"
+                rows="5"
+                placeholder=""
+                id="Address"
+              ></textarea>
+              <p id="Address_err" class="text-danger fw-bold"></p>
+            </div>
+          </div>
+          <!-- Gender -->
+          <div class="form-group row container">
+            <div class="col-sm-6">
+              <label type="text">
+                <span class="text-black ms-2">Gender : </span></label><br>
+              
+              <input 
+                type="radio" 
+                class="ms-3 mt-1"
+                name="Gender" 
+                value="male"
+                />
+                <!-- Male -->
+                  <label 
+                    for="gender" 
+                    class="ms-1">Male</label><br>                        
+              <input 
+                type="radio" 
+                class="ms-3 mt-1" 
+                name="Gender"
+                value="Female">
+                <!-- Female -->
+                  <label 
+                    for="Gender" 
+                    class=" mt-1">Female</label><br>
+              <input 
+                type="radio" 
+                  class="ms-3 mt-1" 
+                  name="Gender"
+                  value="Others">
+                  <!-- Others -->
+                    <label 
+                      for="gender" 
+                        class=" mt-1">Others</label>
+                          
+              <p id="Gender_err" class="text-danger fw-bold"></p>
+            </div>
+            <!-- Skills -->
+            <div class="col-sm-6">
+              <label type="text">
+                <span class="text-black">Skills : </span></label
+              ><br>
+              <input 
+                type="checkbox" 
+                id="skills" 
+                class="ms-3" 
+                name="Skills[]" 
+                value="Full Stack">
+                <!-- fullstack -->
+                  <label 
+                  for="skill" 
+                  class="">Full Stack</label><br>
+              <input 
+              type="checkbox" 
+              id="skills" 
+              class="ms-3" 
+              name="Skills[]" 
+              value="Fron-end">
+              <!-- frontend -->
+                <label 
+                for="skill" 
+                class="">Front-end</label><br>
+              <input 
+                type="checkbox" 
+                id="skills" 
+                class="ms-3 skills" 
+                name="Skills[]" 
+                value="Back-end">
+                <!-- backend -->
+                  <label 
+                    for="skill skills" 
+                    class="">Back-end</label>
+              <p id="Skills_err" class="text-danger fw-bold"></p>
+            </div>
+          </div>
+          <div class="container d-flex justify-content-center">
+            <input
+              type="button"
+              onclick="mydetail()"
+              class="beautiful-button mb-4 mt-4 fw-bold text-dark"
+              value="Submit"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="table-responsive">
+        <table class="table table-primary shadow-lg mb-5 text-center" id="">
+          <thead>
+            <tr>
+              <th>FirstName</th>
+              <th>LastName</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Username</th>
+              <th>Address</th>
+              <th>Gender</th>
+              <th>Skills</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody id="displayArea"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
+		
