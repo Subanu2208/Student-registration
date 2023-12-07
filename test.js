@@ -75,7 +75,7 @@ function mydetail() {
      Skills != ""
   ) {
     if(id!=""){
-      detail[id].firstname= firstname;;
+      detail[id].firstname= firstname;
       detail[id].Lastname= Lastname;
     detail[id].Phone= Phone;
     detail[id].Email= Email;
